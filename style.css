@@ -113,4 +113,15 @@ p {
   border: 3px solid #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
+.site-title {
+  background-color: #123c77; 
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 20px 0;
+  letter-spacing: 3px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
 
