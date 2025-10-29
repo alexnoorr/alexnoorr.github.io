@@ -1,36 +1,94 @@
+/* ===== GLOBAL ===== */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
 }
 
+/* Smooth fade-in */
+body, header, main {
+    animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ===== HEADER ===== */
 header {
-    background-color: #333;
+    background: linear-gradient(120deg, #2a4d9b, #1f2e4a);
     color: white;
-    padding: 10px 0;
+    padding: 30px 0;
     text-align: center;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
 }
 
+/* ===== NAV ===== */
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 10px 0 0 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline-block;
+    margin: 0 18px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    transition: 0.25s;
 }
 
+/* Hover effect */
+nav ul li a:hover {
+    opacity: 0.8;
+    border-bottom: 2px solid white;
+}
+
+/* ===== CONTENT ===== */
 main {
-    padding: 20px;
+    padding: 40px;
+    max-width: 850px;
+    margin: auto;
 }
 
-h1 {
-    color: #333;
+/* Card effect around main content */
+main > * {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-weight: 600;
+    color: #1f2e4a;
+    margin-bottom: 15px;
+}
+
+/* Subtle link style */
+a {
+    color: #2a4d9b;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Space between repeated elements like <p> */
+p {
+    margin-bottom: 12px;
 }
