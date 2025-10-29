@@ -106,8 +106,8 @@ p {
 }
 
 .profile-pic {
-  width: 160px;
-  height: 160px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #fff;
